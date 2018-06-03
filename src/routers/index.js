@@ -1,23 +1,23 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
 import HeroesList from '@/views/heroes/list'
 import WeaponsList from '@/views/weapons/list'
 import EquipList from '@/views/equip/list'
 import HeroesAdd from '@/views/heroes/add'
 import HeroesEdit from '@/views/heroes/edit'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-export default new VueRouter({
+export default new Router({
   routes: [{
       name: 'home',
       path: '/',
       redirect: {
-        name: '/heroes'
+        name: 'heroes'
       }
     },
     {
-      name: 'heros',
+      name: 'heroes',
       path: '/heroes',
       component: HeroesList
     },
@@ -32,7 +32,7 @@ export default new VueRouter({
       component: EquipList
     },
     {
-      name: 'herosadd',
+      name: 'heroesadd',
       path: '/heroesadd',
       component: HeroesAdd
     },

@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div>
+    <myheader></myheader>
+    <div class="container-fliud">
+      <div class="row">
+        <!-- sidebar -->
+        <mysidebar></mysidebar>
+      
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <router-view></router-view>
+      </div>
+    </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import myheader from "@/components/myheader";
+import mysidebar from "@/components/mysidebar";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    myheader,
+    mysidebar
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
