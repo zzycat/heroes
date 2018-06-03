@@ -27,7 +27,7 @@
   ],
   "heroes": [
     {
-      "name": "刘备",
+      "name": "zzycat",
       "gender": "男",
       "id": 3
     },
@@ -45,6 +45,11 @@
       "name": "张雨猫",
       "gender": "男",
       "id": 7
+    },
+    {
+      "name": "yCat",
+      "gender": "酷",
+      "id": 8
     }
   ]
 }

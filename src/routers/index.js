@@ -37,7 +37,7 @@ export default new Router({
       component: HeroesAdd
     },
     {
-      name: 'herosedit',
+      name: 'heroesedit',
       path: '/heroesedit',
       component: HeroesEdit
     }
